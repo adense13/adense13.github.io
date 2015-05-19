@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MultiSnake Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+	#pad {
+		margin-bottom: 20px;
+	}
+
+	#pad-right {
+		margin-right: 10px;
+	}
+
+  .vcenter {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+	}
+
+  .vcenter img {
+    width: 100%;
+    height: 100%;
+  }
+
+  	.borders{
+  		border-style: solid;
+  		border-color: black;
+  		border-width: 1px;
+		background-color: white;
+
+  		padding-right: 50px;
+  		padding-left: 50px;
+  	}
+  	.top-image{
+		float:right;
+		float:top;
+		margin-top:5px;
+  	}
+  	.button-top-margin{
+  		margin-top:50px;
+  		margin-bottom:10px;
+  	}
+
+  	.navbar-inverse{
+  		background-color: orange;
+  	}
+
+  	.collapse.navbar-collapse li a {
+  		color: black;
+  	}
+
+  	.navbar-header .navbar-brand{
+		color: black;
+		font-weight: bold;
+		font-size: 30px;
+  	}
+
+  	.styled-select select {
+
+   }
+   body {
+    	background-color: #f0e4c9;
+	}
+
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    var cw = $('.vcenter img').width();
+      $('.vcenter img').css({
+      'height': cw + 'px'
+    });
+  </script>
+  <script>
+    window.addEventListener("resize", function(e) {
+      var mapElement = document.getElementById("img");
+      mapElement.style.height = mapElement.offsetWidth;
+    });
+  </script>
+</head>
+
+
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="index.html">MultiSnake</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">The Code</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm-3">
+			</div>
+
+			<div class="col-sm-6">
+				<div class="container-fluid">
+					<div class="row" id="pad">
+						<div class="col-sm-12"><div class="bg-warning">
+							<div class="borders">
+								<h1>Codes and things</h1>
+								<p><code>Cool code and stuff</code></p>
+							</div>
+						</div></div>
+					</div>
+
+				</div>
+			</div>
+
+
+		<div class="col-sm-3">
+		</div>
+
+
+			</div>
+		</div>
+
+
+
+	</div>
+</body>
+</html>
