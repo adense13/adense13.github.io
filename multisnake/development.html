@@ -69,6 +69,19 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    var cw = $('.vcenter img').width();
+      $('.vcenter img').css({
+      'height': cw + 'px'
+    });
+  </script>
+  <script>
+    window.addEventListener("resize", function(e) {
+      var mapElement = document.getElementById("img");
+      mapElement.style.height = mapElement.offsetWidth;
+    });
+  </script>
 </head>
 
 
@@ -86,8 +99,8 @@
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="development.html">Development</a></li>
-            <li class="active"><a href="#">Report</a></li>
+            <li class="active"><a href="#">Development</a></li>
+            <li><a href="report.html">Report</a></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -107,8 +120,12 @@
 
 						<div class="col-sm-12"><div class="bg-warning">
 							<div class="borders">
-								<h1>Report</h1>
-									<p><li><a href="https://github.com/adense13/MultiSnake/archive/master.zip">Download Report (Swedish)</a></li></p>
+								<h1>Purpose</h1>
+									<p>MultiSnake is our network programming project for the course EDA095. A combination of game mechanics design and network communication between clients and a server felt like an interesting challenge that would produce a fun end result.</p>
+								<h1>Development Process</h1>
+									<p>GitHub enabled us to collaborate and work on the project from multiple computers. This way, we could assign certain modules of the project to specific members. Though we often met up and coded together on the same computer.</p>
+								<h1>Structure</h1>
+									<p>We used Java's Swing to build a GUI. The Client only listens to input from the keyboard and the server and renders graphics. The Server receives input from clients and makes all computations and handle the game model. Communication between the server and client was handled using TCP.</p>
 							</div>
 						</div></div>
 					</div>
