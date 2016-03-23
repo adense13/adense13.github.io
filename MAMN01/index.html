@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MultiSnake Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+	#pad {
+		margin-bottom: 20px;
+	}
+
+	#pad-right {
+		margin-right: 10px;
+	}
+
+  .vcenter {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+	}
+
+  .vcenter img {
+    width: 100%;
+    height: 100%;
+  }
+
+  	.borders{
+  		border-style: solid;
+  		border-color: black;
+  		border-width: 1px;
+		background-color: white;
+
+  		padding-right: 50px;
+  		padding-left: 50px;
+  	}
+  	.top-image{
+		float:right;
+		float:top;
+		margin-top:5px;
+  	}
+  	.button-top-margin{
+  		margin-top:50px;
+  		margin-bottom:10px;
+  	}
+
+  	.navbar-inverse{
+  		/*background-color: orange;*/
+
+  		background: -webkit-linear-gradient(#FBC25A, orange); /* For Safari 5.1 to 6.0 */
+    	background: -o-linear-gradient(#FBC25A, orange); /* For Opera 11.1 to 12.0 */
+    	background: -moz-linear-gradient(#FBC25A, orange); /* For Firefox 3.6 to 15 */
+    	background: linear-gradient(#FBC25A, orange); /* Standard syntax (must be last) */
+  	}
+
+  	.collapse.navbar-collapse li a {
+  		color: black;
+  	}
+
+  	.navbar-header .navbar-brand{
+		color: black;
+		font-weight: bold;
+		font-size: 30px;
+  	}
+
+  	.styled-select select {
+
+   }
+   body {
+    	background-color: #f0e4c9;
+	}
+
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-2">
+		</div>
+
+		<div class="col-sm-8">
+			<div class="container-fluid">
+
+				<div class="row" id="pad">
+					<div class="col-sm-12"><div class="bg-warning">
+						<div class="borders">
+							<h1>Instructions</h1>
+							<h3>1. Acceleration Data</h3>
+								<ul>
+									<li><h4>1.1 Delta Acceleration and Motion</h4></li>
+									<ul>
+										<li>This was mostly as a fun experiment and only shows the change of velocity in a direction. It also has a very primitive way of showing which direction you moved your phone.</li>
+									</ul>
+									<li><h4>1.2 Current Acceleration</h4></li>
+									<ul>
+										<li>This section simply shows the values from the sensors, including gravity.</li>
+									</ul>
+								</ul>
+							<h3>2. Compass</h3>
+							<ul>
+								<li>This section simply has a rotating compass, a TextView to display the degree of rotation relative to the north, and it displays in words which direction you are facing.</li>
+							</ul>
+							<h3>3. Display Message</h3>
+							<ul>
+								<li>This is a remnant from the tutorial on "how to create your first app", but I left it in! </li>
+							</ul>
+						</div>
+					</div></div>
+				</div>
+		
+				<div class="row" id="pad">
+					<div class="col-sm-12"><div class="bg-success">
+						<div class="borders">
+							<h1>Downloads</h1>
+								<p><a href="https://github.com/adense13/MyFirstApp">Git Repository</a></p>
+								<p><a href="https://github.com/adense13/MyFirstApp/archive/master.zip">Source Code + Runnable Jar</a></p>
+							<h1>Contact</h1>
+								<p><a href="mailto:dic13aha@student.lu.se" target="_top">Adrian Hansson</a></p>
+						</div>
+					</div></div>
+				</div>
+			</div>
+		</div>
+</div>
+</body>
+</html>
